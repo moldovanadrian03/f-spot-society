@@ -41,6 +41,7 @@ $primary-color: #ffef41;
 $secondary-color: #f5f5f5;
 $ternary-color: #2452b6;
 $border-color: #101324;
+$text-color: #101324;
 $hover-primary: #ffef41;
 $hover-secondary: #ffef41;
 
@@ -52,7 +53,9 @@ $text-color: #101324;
 :root {
   --primary-color: #{$primary-color};
   --secondary-color: #{$secondary-color};
-  --border-color: #{$ternary-color};
+  --ternary-color: #{$ternary-color};
+  --text-color: #{$text-color};
+  --border-color: #{$border-color};
 }
 * {
   margin: 0;
@@ -70,10 +73,6 @@ $text-color: #101324;
 .description,
 .sub-title {
   padding: 5px 0;
-}
-
-.leaflet-marker-icon {
-  background: transparent !important;
 }
 
 button {
