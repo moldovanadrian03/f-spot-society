@@ -143,6 +143,7 @@ img.logo {
 }
 
 li {
+  list-style: none;
   &:hover {
     color: $ternary-color;
   }
