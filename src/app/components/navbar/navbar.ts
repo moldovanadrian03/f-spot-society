@@ -1,6 +1,6 @@
-import { AfterViewInit, Component, HostListener, OnInit } from '@angular/core';
+import { Component, HostListener, OnInit } from '@angular/core';
 import { MatIconModule } from '@angular/material/icon';
-import { After } from 'v8';
+import { ABOUT_SECTION, CARDS_SECTION, FOOTER_SECTION, INFO_SECTION, scrollToElementById } from '../../utils';
 
 @Component({
   selector: 'app-navbar',
@@ -36,4 +36,13 @@ export class Navbar implements OnInit {
   toggleSidenav(): void {
     this.isSidenavOpened = !this.isSidenavOpened;
   }
+
+  scrollTo(element: string): void {
+    scrollToElementById(element);
+  }
+
+  ABOUT_SECTION = ABOUT_SECTION;
+  INFO_SECTION = INFO_SECTION;
+  MEMBERS_SECTION = CARDS_SECTION;
+  FOOTER_SECTION = FOOTER_SECTION;
 }

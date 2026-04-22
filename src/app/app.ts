@@ -14,4 +14,9 @@ import { TeamCards } from "./components/team-cards/team-cards";
 })
 export class App {
   protected readonly title = signal('f-spot-society');
+
+  ABOUT_SECTION = 'about-section';
+  INFO_SECTION = 'info-section';
+  MEMBERS_SECTION = 'members-section';
+  FOOTER_SECTION = 'footer-section';
 }

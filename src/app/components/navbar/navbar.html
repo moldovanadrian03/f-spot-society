@@ -19,16 +19,16 @@
   @if(!isMobileView) {
     <section class="navbar-row2">
       <ul>
-        <li>
+        <li (click)="scrollTo(ABOUT_SECTION)">
           Despre noi
         </li>
-        <li>
-          Echipa
+        <li (click)="scrollTo(INFO_SECTION)">
+          Ce facem
         </li>
-        <li>
-          Catalog
+        <li (click)="scrollTo(MEMBERS_SECTION)">
+          Membrii
         </li>
-        <li>
+        <li (click)="scrollTo(FOOTER_SECTION)">
           Contact
         </li>
       </ul>
@@ -41,16 +41,16 @@
   @if(isSidenavOpened) {
     <section class="sidenav-container">
       <ul>
-        <li (click)="toggleSidenav()">
+        <li (click)="toggleSidenav(); scrollTo(ABOUT_SECTION)">
           Despre noi
         </li>
-        <li (click)="toggleSidenav()">
-          Echipa
+        <li (click)="toggleSidenav(); scrollTo(INFO_SECTION)">
+          Ce facem
         </li>
-        <li (click)="toggleSidenav()">
-          Catalog
+        <li (click)="toggleSidenav(); scrollTo(MEMBERS_SECTION)">
+          Membrii
         </li>
-        <li (click)="toggleSidenav()">
+        <li (click)="toggleSidenav(); scrollTo(FOOTER_SECTION)">
           Contact
         </li>
       </ul>
