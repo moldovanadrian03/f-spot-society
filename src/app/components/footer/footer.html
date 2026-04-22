@@ -2,21 +2,21 @@
   <div class="header">
     <div class="info-container">
       <div class="info">
-        <img class="logo" src="assets/about.jpg" alt="F Spot Society logo" />
+        <img class="logo" src="assets/about.jpg" alt="F Spot Society logo" (click)="scrollTo(ABOUT_SECTION)"/>
         <p>F Spot Society</p>
       </div>
     </div>
     <div class="links-container">
       <h3>Linkuri rapide</h3>
       <ul>
-        <li>
+        <li (click)="scrollTo(ABOUT_SECTION)">
           Despre noi
         </li>
-        <li>
-          Echipa
+        <li (click)="scrollTo(INFO_SECTION)">
+          Ce facem ?
         </li>
-        <li>
-          Catalog
+        <li (click)="scrollTo(MEMBERS_SECTION)">
+          Echipa
         </li>
       </ul>
     </div>

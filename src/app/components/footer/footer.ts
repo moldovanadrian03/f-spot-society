@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { FACEBOOK, INSTAGRAM, openLink } from '../../utils';
+import { FACEBOOK, INSTAGRAM, openLink, scrollToElementById, ABOUT_SECTION, INFO_SECTION, CARDS_SECTION } from '../../utils';
 
 @Component({
   selector: 'app-footer',
@@ -13,6 +13,14 @@ export class Footer {
     openLink(url);
   }
 
+  scrollTo(element: string): void {
+    scrollToElementById(element);
+  }
+
   FACEBOOK = FACEBOOK;
   INSTAGRAM = INSTAGRAM;
+
+  ABOUT_SECTION = ABOUT_SECTION;
+  INFO_SECTION = INFO_SECTION;
+  MEMBERS_SECTION = CARDS_SECTION;
 }
