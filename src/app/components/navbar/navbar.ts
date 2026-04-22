@@ -1,6 +1,6 @@
 import { Component, HostListener, OnInit } from '@angular/core';
 import { MatIconModule } from '@angular/material/icon';
-import { ABOUT_SECTION, CARDS_SECTION, FOOTER_SECTION, INFO_SECTION, scrollToElementById } from '../../utils';
+import { ABOUT_SECTION, MEMBERS_SECTION, FOOTER_SECTION, INFO_SECTION, scrollToElementById, PROJECTS_SECTION } from '../../utils';
 
 @Component({
   selector: 'app-navbar',
@@ -43,6 +43,7 @@ export class Navbar implements OnInit {
 
   ABOUT_SECTION = ABOUT_SECTION;
   INFO_SECTION = INFO_SECTION;
-  MEMBERS_SECTION = CARDS_SECTION;
+  MEMBERS_SECTION = MEMBERS_SECTION;
+  PROJECTS_SECTION = PROJECTS_SECTION;
   FOOTER_SECTION = FOOTER_SECTION;
 }

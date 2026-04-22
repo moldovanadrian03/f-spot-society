@@ -1,3 +1,5 @@
+import { Project } from "./interfaces/project.model";
+
 export function openLink(url: string): void {
   window.open(url, '_blank');
 }
@@ -35,7 +37,30 @@ export const TEAM_MEMBERS = [
     title: 'Alexia Gatea',
   }];
 
+export const PROJECTS: Project[] = [
+  {
+    image: 'assets/about.jpg',
+    title: 'F-Spot Society',
+    description: 'F-Spot Society este o asociație culturală care își propune să sprijine și să promoveze tinerii artiști din România, oferindu-le oportunități de expunere și dezvoltare a carierei lor artistice. Organizăm evenimente, expoziții și ateliere pentru a crea o platformă de dialog și colaborare între artiști și publicul larg. Ne dedicăm să aducem arta contemporană mai aproape de comunitate și să susținem creativitatea tinerilor talentați. la Festivalul Național de Artă Contemporană 2024, F-Spot Society a fost premiat pentru cel mai bun proiect cultural la Gala Tineretului 2023. asdasdasdasdasdasdasdasd asdasdasdasd asdasdasdasd asdasdasdasd asdasdasdasd asdasdasdasd asdasdasdasd asdasdasdasd asdasdasdasd asdasdasdasd asdasdasdasd asdasdasdasd asdasdasdasd asdasdasdasd asdasdasdasd asdaasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadsasdasdasdasd asdasdasdasd asdasdasdasd asdasdasdasd asdasdasdasd asdasdasdasd asdasdasdasd asdasdasdasd asdasdasdasd asdasdasdasd asdasdasdasd asdaasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadsasdasdasdasd asdasdasdasd asdasdasdasd asdasdasdasd asdasdasdasd asdasdasdasd asdasdasdasd asdasdasdasd asdasdasdasd asdaasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadsa',
+    awards: ['Premiul pentru cel mai bun proiect cultural la Gala Tineretului 2023', 'Mențiune specială la Festivalul Național de Artă Contemporană 2024'],
+    subject: 'Cultură și artă',
+    instagram: 'https://www.google.com',
+    facebook: 'https://www.google.com',
+    isExpanded: false,
+  },
+  {
+    image: 'assets/about.jpg',
+    title: 'F-Spot Society',
+    description: 'F-Spot Society este o asociație culturală care creează filme care contează, pentru copii și adolescenții, oferindu-le oportunităților de descoperire vocea. asdasdasdasdasdasdasdasdasd asdasdasdasd asdasdasdasd asdasdasdasd asdasdasdasd asdasdasdasd asdasdasdasd asdasdasdasd asdasdasdasd asdasdasdasd asdaasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadsasdasdasdasd asdasdasdasd asdasdasdasd asdasdasdasd asdasdasdasd asdasdasdasd asdasdasdasd asdaasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadasdsadsa',
+    awards: ['Premiul pentru cel mai bun proiect cultural la Gala Tineretului 2023', 'Mențiune specială la Festivalul Național de Artă Contemporană 2024'],
+    subject: 'Cultură',
+    instagram: 'https://www.instagram.com/f.spot.society',
+    facebook: 'https://www.facebook.com/f.spot.society',
+    isExpanded: false,
+}];
+
 export const ABOUT_SECTION = 'about-section';
 export const INFO_SECTION = 'info-section';
-export const CARDS_SECTION = 'members-section';
+export const PROJECTS_SECTION = 'projects-section';
+export const MEMBERS_SECTION = 'members-section';
 export const FOOTER_SECTION = 'footer-section';

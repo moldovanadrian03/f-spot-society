@@ -1,0 +1,163 @@
+/* ===== GRID ===== */
+.grid {
+  display: grid;
+  gap: 24px;
+  padding: 20px;
+  align-items: start;
+}
+
+/* desktop */
+@media (min-width: 1024px) {
+  .grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* tablet */
+@media (min-width: 600px) and (max-width: 1023px) {
+  .grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* mobile */
+@media (max-width: 599px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ===== CARD ===== */
+.card {
+  background: #f5f5f5;
+  border-radius: 12px;
+  overflow: hidden;
+
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  align-self: start;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.card.expanded {
+  background: #fff;
+}
+
+/* ===== IMAGE ===== */
+.image img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+/* ===== CONTENT ===== */
+.content {
+  padding: 20px;
+  min-height: 220px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+/* ===== TEXT BLOCK (IMPORTANT) ===== */
+.text {
+  position: relative;
+  overflow: hidden;
+  padding: 10px;
+
+  transition: max-height 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* collapsed */
+.text.collapsed {
+  max-height: 100px;
+}
+
+/* expanded */
+.card.expanded .text {
+  max-height: 1000px;
+}
+
+/* ===== FADE EFFECT ===== */
+.text::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 40px;
+
+  background: linear-gradient(to bottom, transparent, #f5f5f5);
+
+  opacity: 1;
+  pointer-events: none;
+
+  transition: opacity 0.3s ease;
+}
+
+.card.expanded .text::after {
+  opacity: 0;
+}
+
+/* ===== TITLES ===== */
+h2 {
+  margin: 10px 0;
+  font-size: 26px;
+  font-weight: bold;
+}
+
+p {
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* ===== BUTTON ===== */
+button {
+  margin: 10px 20px;
+
+  border: none;
+  background: black;
+  color: white;
+
+  cursor: pointer;
+  border-radius: 6px;
+
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+
+button:hover {
+  transform: scale(1.05);
+  background: #222;
+}
+
+/* ===== SOCIAL ===== */
+.social {
+  display: flex;
+  gap: 12px;
+
+  margin-top: auto;
+  padding: 10px;
+}
+
+.social i {
+  cursor: pointer;
+  padding: 4px;
+
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.social i:hover {
+  color: var(--ternary-color);
+  transform: scale(1.1);
+}
+
+/* mobile tweak */
+@media (max-width: 768px) {
+  .social {
+    padding-top: 16px;
+    align-items: center;
+  }
+}

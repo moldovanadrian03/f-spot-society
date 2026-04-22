@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { TEAM_MEMBERS } from '../../utils';
-import { Card } from '../../interfaces/card.model';
+import { Member } from '../../interfaces/member.model';
 import { NgFor } from '@angular/common';
 
 @Component({
@@ -13,6 +13,6 @@ import { NgFor } from '@angular/common';
 })
 export class TeamCards {
   members = TEAM_MEMBERS;
-  selectedCard: Card | null = null;
+  selectedMember: Member | null = null;
 
 }
