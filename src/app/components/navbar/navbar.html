@@ -21,18 +21,23 @@
     <section class="navbar-row2">
       <ul>
         <li (click)="scrollTo(ABOUT_SECTION)">
+          <img class="cherry" *ngIf="activeSection === ABOUT_SECTION" src="assets/cherry.png" />
           Despre noi
         </li>
         <li (click)="scrollTo(INFO_SECTION)">
+          <img class="cherry" *ngIf="activeSection === INFO_SECTION" src="assets/cherry.png" />
           Ce facem
         </li>
         <li (click)="scrollTo(MEMBERS_SECTION)">
+          <img class="cherry" *ngIf="activeSection === MEMBERS_SECTION" src="assets/cherry.png" />
           Membrii
         </li>
         <li (click)="scrollTo(PROJECTS_SECTION)">
+          <img class="cherry" *ngIf="activeSection === PROJECTS_SECTION" src="assets/cherry.png" />
           Proiecte
         </li>
         <li (click)="scrollTo(FOOTER_SECTION)">
+          <img class="cherry" *ngIf="activeSection === FOOTER_SECTION" src="assets/cherry.png" />
           Contact
         </li>
       </ul>
@@ -46,18 +51,23 @@
     <section class="sidenav-container">
       <ul>
         <li (click)="toggleSidenav(); scrollTo(ABOUT_SECTION)">
+          <img class="cherry" *ngIf="activeSection === ABOUT_SECTION" src="assets/cherry.png" />
           Despre noi
         </li>
         <li (click)="toggleSidenav(); scrollTo(INFO_SECTION)">
+          <img class="cherry" *ngIf="activeSection === INFO_SECTION" src="assets/cherry.png" />
           Ce facem
         </li>
         <li (click)="toggleSidenav(); scrollTo(MEMBERS_SECTION)">
+          <img class="cherry" *ngIf="activeSection === MEMBERS_SECTION" src="assets/cherry.png" />
           Membrii
         </li>
         <li (click)="toggleSidenav(); scrollTo(PROJECTS_SECTION)">
+          <img class="cherry" *ngIf="activeSection === PROJECTS_SECTION" src="assets/cherry.png" />
           Proiecte
         </li>
         <li (click)="toggleSidenav(); scrollTo(FOOTER_SECTION)">
+          <img class="cherry" *ngIf="activeSection === FOOTER_SECTION" src="assets/cherry.png" />
           Contact
         </li>
       </ul>
