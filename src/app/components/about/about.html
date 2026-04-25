@@ -1,4 +1,8 @@
-<section class="container">
+<section
+  class="container"
+  appAnimateOnScroll
+  (visible)="isVisible = true"
+  [@slideInDown]="isVisible ? 'visible' : 'hidden'">
   <div class="info-container">
     <h2 class="title">Asociația Culturală<br> F SPOT SOCIETY</h2>
     <p class="description">

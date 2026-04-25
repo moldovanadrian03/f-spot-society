@@ -1,4 +1,4 @@
-import { AfterViewInit, Directive, ElementRef, EventEmitter, Output, output } from '@angular/core';
+import { AfterViewInit, Directive, ElementRef, EventEmitter, Input, Output, output } from '@angular/core';
 
 @Directive({
   selector: '[appAnimateOnScroll]',
@@ -6,6 +6,7 @@ import { AfterViewInit, Directive, ElementRef, EventEmitter, Output, output } fr
 })
 export class AnimateOnScroll implements AfterViewInit {
   @Output() visible = new EventEmitter<void>();
+  @Input() threshold: number = 0.6;
 
   constructor(private el: ElementRef) {}
 
@@ -15,7 +16,7 @@ export class AnimateOnScroll implements AfterViewInit {
         this.visible.emit();
         observer.unobserve(entry.target);
       }
-    }, { threshold: 0.2 }); // Adjust the threshold as needed
+    }, { threshold: this.threshold });
 
     observer.observe(this.el.nativeElement);
   }

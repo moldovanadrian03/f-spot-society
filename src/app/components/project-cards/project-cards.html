@@ -1,4 +1,8 @@
-<div class="grid">
+<div
+  class="grid"
+  appAnimateOnScroll
+  (visible)="isVisible = true"
+  [@slideInUp]="isVisible ? 'visible' : 'hidden'">
   <div class="card" *ngFor="let project of PROJECTS" [class.expanded]="project.isExpanded">
 
     <div class="image">

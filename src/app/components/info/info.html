@@ -1,4 +1,8 @@
-<section class="container">
+<section
+  class="container"
+  appAnimateOnScroll
+  (visible)="isVisible = true"
+  [@slideInLeft]="isVisible ? 'visible' : 'hidden'">
   <div class="image-container">
     <img class="image" src="assets/about.jpg" alt="about">
   </div>
